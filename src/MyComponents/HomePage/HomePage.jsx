@@ -1,11 +1,11 @@
 import React from 'react'
 
 export const HomePage = () => {
-  return (
-    <>
-    <div>HomePage</div>
-    <h1>dfghjkl</h1>
-    <h1>ertyui</h1>
-    </>
-  )
+    return (
+        <>
+            <div className="sectionTow">
+                <h1>Vedant</h1>
+            </div>
+        </>
+    )
 }

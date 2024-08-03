@@ -6,9 +6,10 @@
 }
 
 .sectionOne {
-    background-color: #333;
+    background-color: #1b1c1f;
     color: white;
     padding-top: 5rem;
+    padding-bottom: 6rem;
 }
 
 .hpSectionOneLeft img {
@@ -43,3 +44,45 @@
     font-family: 'Roboto ', sans-serif;
     padding-top: 1rem;
 }
+
+.sectionOne button {
+    padding: 15px 50px;
+    border-radius: 33px;
+    font-size: 18px;
+    background-color: #1b1c1f;
+    border: 2px solid #fff;
+    font-weight: 500;
+}
+
+.sectionOne button:hover {
+    padding: 15px 50px;
+    border-radius: 33px;
+    background-color: #ff4135;
+    border: 2px solid #ff4135;
+}
+
+.introImages {
+    display: flex;
+    flex-direction: column;
+}
+
+.introImages img {
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.introImages .image1 {
+    align-self: flex-start;
+}
+
+.introImages .image2 {
+    align-self: flex-end;
+    position: absolute;
+    top: -15%;
+    right: 0%;
+}
+
+.hpSectionOneRight{
+    position: relative;
+}
+

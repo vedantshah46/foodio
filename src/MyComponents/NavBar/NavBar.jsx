@@ -57,8 +57,8 @@ import LogoCap from './Images/brandLogoCap.svg';
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-dark">
-            <div className="container">
+        <nav className="navbar navbar-expand-lg">
+            <div className="container navBarContainer">
                 
                 <a className="navbar-brand" href="#">
                     <img src={LogoCap} alt="Brand Logo" />
@@ -67,7 +67,7 @@ const NavBar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul className="navbar-nav ">
+                    <ul className="navbar-nav navbarLink">
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -83,7 +83,7 @@ const NavBar = () => {
                         </li>
                     </ul>
                 </div>
-                <button className="btn btn-danger order-btn" type="button">Reserve now</button>
+                <button className="btn order-btn" type="button">Reserve now</button>
             </div>
         </nav>
     );

@@ -6,47 +6,53 @@
 }
 
 /* General navbar styling */
-.navbar {
-    background-color: #1b1c1f;
-    padding: 1rem;
-    font-family: 'Poppins', sans-serif;
+.navBarContainer {
+    max-width: 1211px;
 }
 
-#navbarNavDropdown {
-    justify-content: center;
-    font-size: 18px;
-  }
+.navbar {
+    background-color: #1B1C1F;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 /* Navbar links */
 .nav-link {
     color: #fff !important;
-    margin: 0 0.5rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navbarLink{
+    margin-left: 2rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 4.9rem;
 }
 
 .nav-link:hover {
-    color: #e74c3c !important;
+    color: #ff4135 !important;
 }
 
 .nav-link.active {
-    color: #e74c3c !important;
-    /* Adjust active link color */
+    color: #ff4135 !important;
 }
 
 /* Order button styling */
 .order-btn {
-    background-color: #e74c3c;
+    background-color: #ff4135;
     color: #fff;
-    border: none;
-    border-radius: 50px;
-    padding: 0.5rem 1.5rem;
-    font-weight: bold;
+    text-align: center;
+    border-radius: 40px;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: 600;
+
 }
 
 .order-btn:hover {
-    background-color: #d62c1a;
-    /* Adjust hover color */
+    background-color: #fff;
+    color: black;
 }
-
-/* Align items properly in navbar */
-/* .ml-auto {
-    margin-left: auto;
-} */

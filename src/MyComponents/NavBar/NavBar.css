@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -6,16 +7,12 @@
 }
 
 /* General navbar styling */
-.navBarContainer {
-    max-width: 1211px;
+.navBarContainer {  
+    width: 100%; /* Ensure container is responsive */
 }
 
-.navbar {
-    background-color: #1B1C1F;
-    padding: 1rem;
-    font-family: 'Poppins', sans-serif;
-    padding-top: 2rem;
-  padding-bottom: 2rem;
+.navbar{
+    background-color: #1b1c1f;
 }
 
 /* Navbar links */
@@ -25,11 +22,14 @@
     font-weight: 600;
 }
 
-.navbarLink{
-    margin-left: 2rem;
+.navbarLink {
+    justify-content: center; /* Center the links on desktop screens */
+    width: 100%; /* Full width for centering */
 }
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: 4.9rem;
+
+.navbarLink .nav-link {
+    padding-left: 2rem; /* Space between links */
+    padding-right: 2rem;
 }
 
 .nav-link:hover {
@@ -40,19 +40,44 @@
     color: #ff4135 !important;
 }
 
+.nav-item {
+    padding-right: 3rem;
+    padding-left: 2rem;
+  }
 /* Order button styling */
 .order-btn {
-    background-color: #ff4135;
-    color: #fff;
-    text-align: center;
+    background-color: #ff4135; /* Apply the specified color */
     border-radius: 40px;
     padding: 16px 32px;
     font-size: 18px;
     font-weight: 600;
-
+    color: #fff;
+    white-space: nowrap; /* Prevents the button text from wrapping */
+  
 }
 
 .order-btn:hover {
     background-color: #fff;
     color: black;
+}
+
+/* Toggler customization */
+.navbar-toggler {
+    background-color: #ff4135; /* Apply the specified color */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Remove padding-left for screens smaller than 992px */
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item {
+        padding-left: 0 !important;
+    }
+
+    .navbarLink .nav-link {
+        padding-left: 1rem;
+        padding-right: 2rem;
+      }
 }

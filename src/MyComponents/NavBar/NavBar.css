@@ -7,9 +7,9 @@
 }
 
 /* General navbar styling */
-.navBarContainer {  
-    width: 100%; /* Ensure container is responsive */
-}
+/* .navBarContainer {
+    width: 100%;
+} */
 
 .navbar{
     background-color: #1b1c1f;

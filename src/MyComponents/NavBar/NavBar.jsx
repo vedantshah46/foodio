@@ -8,7 +8,7 @@ import LogoCap from './Images/brandLogoCap.svg';
 const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark pt-4">
-            <div className="container-lg"> {/* Use container-lg for responsive max-width */}
+            <div className="container-xxl"> {/* Use container-lg for responsive max-width */}
                 <a className="navbar-brand" href="#">
                     <img src={LogoCap} alt="Brand Logo" />
                 </a>

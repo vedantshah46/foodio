@@ -1,126 +1,130 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
 }
+
 .team-section {
     text-align: center;
     background-color: #0b0b0b;
     padding: 60px 20px;
     color: white;
-  }
-  
-  .title {
-    font-size: 2.5rem;
+}
+
+.title {
+    font-size: 60px;
     margin-bottom: 10px;
     color: white;
     font-weight: bold;
     position: relative;
-  }
-  
-  .title:before {
+    font-family: Playfair Display, sans-serif;
+    padding-top: 20px;
+}
+
+.title:before {
     content: "Our Team";
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     position: absolute;
     top: -30px;
     left: 0;
     right: 0;
-    color: #e63946;
-  }
-  
-  .subtitle {
+    color: #ff4135;
+    margin-bottom: 25px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.subtitle {
     font-size: 1.2rem;
     margin-bottom: 40px;
     color: #d3d3d3;
-  }
-  
-  @media (max-width: 768px) {
+    font-family: Inter, sans-serif;
+}
+
+@media (max-width: 768px) {
     .title {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-    
+
     .subtitle {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  }
-  
-  .team-wrapper {
+}
+
+.team-wrapper {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-  }
-  
-  .member-card {
+}
+
+.member-card {
     position: relative;
     width: 250px;
     text-align: center;
     color: white;
     transition: all 0.3s ease;
-  }
-  
-  .member-card:hover {
+}
+
+.member-card:hover {
     transform: scale(1.05);
-  }
-  
-  .image-wrapper {
-    position: relative;
+}
+
+.image-wrapper {
     width: 200px;
     height: 200px;
     margin: 0 auto;
     border-radius: 50%;
+    z-index: 1;
     overflow: hidden;
-    border: 5px solid transparent;
-    transition: border-color 0.3s ease;
-  }
-  
-  .image-wrapper:hover {
-    border-color: #e63946; /* Red Circle border */
-  }
-  
-  .image-wrapper:hover::after {
-    content: "";
-    background-image: url('../../assets/spoon-fork-icon.svg'); /* Use the path to your SVG icon */
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    right: -30px;
-    width: 50px; /* Adjust the size */
-    height: 50px; /* Adjust the size */
-    transform: rotate(-45deg);
-  }
-  
-  .image-wrapper img {
+}
+
+.image-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .member-name {
+    z-index: 0;
+    position: relative;
+}
+
+.image-wrapper:hover::after {
+    content: "";
+    background-image: url("http://localhost:3000/static/media/Team%20Hover.f1a097b2090c18fc5eb5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    transform: translate(-50%, -20%);
+    width: 15rem;
+    height: 80rem;
+    z-index: 3;
+}
+
+
+.member-name {
     font-size: 1.3rem;
     margin-top: 15px;
     color: white;
-  }
-  
-  .position {
+}
+
+.position {
     font-size: 1rem;
     color: #e63946;
-  }
-  
-  .social-icons {
+}
+
+.social-icons {
     margin-top: 10px;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     color: white;
     font-size: 1.5rem;
     margin: 0 10px;
     transition: color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
+}
+
+.social-icons a:hover {
     color: #e63946;
-  }
-  
+}

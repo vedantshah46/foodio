@@ -2,7 +2,8 @@ import React from 'react'
 import homePageHeroSectionBg from './Images/homePageHeroSectionBg.png';
 import './HomePage.css';
 import sectionOneRightTopOne from './Images/sectionOneRightTopOne.jpg';
-import sectionOneRightBottomOne from './Images/sectionOneRightBottomOne.jpg'
+import sectionOneRightBottomOne from './Images/sectionOneRightBottomOne.jpg';
+
 
 export const HomePage = () => {
     return (

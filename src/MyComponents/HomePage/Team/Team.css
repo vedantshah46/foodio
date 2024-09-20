@@ -90,7 +90,7 @@
 
 .image-wrapper:hover::after {
     content: "";
-    background-image: url("http://localhost:3000/static/media/Team%20Hover.f1a097b2090c18fc5eb5.png");
+    background-image: url("D:\React\foodio\src\MyComponents\HomePage\Team\Image\Team Hover.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;

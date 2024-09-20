@@ -12,7 +12,8 @@ const Team = () => {
                 <div className="team-wrapper">
                     <div className="member-card">
                         <div className="image-wrapper">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Robert Williamson" />
+                            {/* <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Robert Williamson" /> */}
+            <h1>abc</h1>
                         </div>
                         <h3 className="member-name">Robert Williamson</h3>
                         <p className="position">Kitchen Supervisor</p>
@@ -23,18 +24,18 @@ const Team = () => {
                         </div>
                     </div>
 
-                    <div className="member-card">
-                        <div className="image-wrapper">
-                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="John Paul" />
-                        </div>
-                        <h3 className="member-name">John Paul</h3>
-                        <p className="position">Sous Culinaire</p>
-                        <div className="social-icons">
-                            <a href="#"><i className="fab fa-facebook"></i></a>
-                            <a href="#"><i className="fab fa-xing"></i></a>
-                            <a href="#"><i className="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
+        <div className="member-card">
+          <div className="image-wrapper">
+            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="John Paul" />
+          </div>
+          <h3 className="member-name">John Paul</h3>
+          <p className="position">Sous Culinaire</p>
+          <div className="social-icons">
+            <a href="#"><i className="fab fa-facebook"></i></a>
+            <a href="#"><i className="fab fa-xing"></i></a>
+            <a href="#"><i className="fab fa-instagram"></i></a>
+          </div>
+        </div>
 
                     <div className="member-card">
                         <div className="image-wrapper">
